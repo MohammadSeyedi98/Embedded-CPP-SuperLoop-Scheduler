@@ -63,6 +63,20 @@ It is a software scheduling project and should not be considered a production-re
 ./superloop
 ```
 
+## Test Results
+
+The following tests passed during local execution:
+
+- Scheduler test
+- Missed executions test
+- Task error handling
+- Task capacity test
+- CRC validation test
+- IRQ thread test
+- Scheduler thread test
+
+**Overall result: PASSED**
+
 ## Author
 
 Mohammad Seyedi
