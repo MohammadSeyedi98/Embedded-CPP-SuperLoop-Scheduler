@@ -49,6 +49,7 @@ Compile the project from the repository root directory:
 
 ```bash
 g++ -std=c++17 -Wall -Wextra -Wpedantic src/main.cpp src/SuperLoop.cpp src/SuperLoopCommon.cpp src/SuperloopConfig.cpp -pthread -o superloop
+```
 
 ## Project Scope
 
@@ -56,20 +57,11 @@ This project is intended to explore task scheduling and SuperLoop architecture i
 
 It is a software scheduling project and should not be considered a production-ready real-time operating system.
 
-##Run
+## Run
 
+```bash
 ./superloop
-
-## Test Results
-
-The current test program reports the following results:
-
-- Scheduler test: PASSED
-- Missed executions test: PASSED
-- CRC validation test: PASSED
-- IRQ thread test: PASSED
-- Scheduler thread test: PASSED
-- Overall result: PASSED
+```
 
 ## Author
 
