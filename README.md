@@ -17,6 +17,11 @@ The project explores task registration, scheduling logic, task status management
 - Configurable timing settings
 - Modular C++ implementation
 - Linux-hosted development and testing
+- Missed execution tracking
+- Task error handling and reporting
+- CRC calculation and data validation
+- Separate IRQ and scheduler threads
+- Task capacity management
 
 ## Project Structure
 
@@ -38,17 +43,33 @@ src/
 - Eclipse IDE
 - Linux/WSL development environment
 
-## Build and Run
+## Build
 
-Open the project in your C++ development environment, configure the compiler and build settings, then build and run the application.
+Compile the project from the repository root directory:
 
-Build instructions may depend on the local development environment.
+```bash
+g++ -std=c++17 -Wall -Wextra -Wpedantic src/main.cpp src/SuperLoop.cpp src/SuperLoopCommon.cpp src/SuperloopConfig.cpp -pthread -o superloop
 
 ## Project Scope
 
 This project is intended to explore task scheduling and SuperLoop architecture in C++.
 
 It is a software scheduling project and should not be considered a production-ready real-time operating system.
+
+##Run
+
+./superloop
+
+## Test Results
+
+The current test program reports the following results:
+
+- Scheduler test: PASSED
+- Missed executions test: PASSED
+- CRC validation test: PASSED
+- IRQ thread test: PASSED
+- Scheduler thread test: PASSED
+- Overall result: PASSED
 
 ## Author
 
