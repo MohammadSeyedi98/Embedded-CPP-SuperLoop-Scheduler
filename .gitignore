@@ -1,0 +1,23 @@
+
+# Compiled binaries and build output
+*.o
+*.obj
+*.exe
+*.out
+*.elf
+*.bin
+*.hex
+
+# Debug files
+*_debug
+*_debug.*
+debug/
+Debug/
+build/
+Build/
+
+# IDE and editor files
+.settings/
+.project
+.cproject
+.vscode/
